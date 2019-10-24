@@ -1,1 +1,13 @@
 // Mixins in here
+
+.flex-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.hover-btn(@color, @background-color) {
+    transition: .3s;
+    color: @color;
+    background-color: @background-color;
+}

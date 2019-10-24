@@ -168,6 +168,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px dotted grey;
+  padding: 2% 0;
+}
+nav .logo {
+  width: 25%;
+}
+nav .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 75%;
+}
+nav .nav a {
+  margin: 2%;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -198,7 +220,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 1px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
