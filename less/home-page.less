@@ -98,6 +98,7 @@
       }
 
         .btn {
+          transition: .3s;
           width: 85%;
           color: white;
           background-color: @eastern-blue;
@@ -106,6 +107,10 @@
           border-radius: 10px;
           font-size: 2rem;
 
+          &:hover{
+            .hover-btn-main(10%);
+          }
+          
           @media @mobile {
             width: 100%;
             margin-bottom: 10%;

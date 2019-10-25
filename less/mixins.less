@@ -6,8 +6,13 @@
     align-items: @align;
 }
 
-.hover-btn(@color, @background-color) {
+.hover-btn-nav(@color, @background-color) {
     transition: .3s;
     color: @color;
     background-color: @background-color;
+}
+
+.hover-btn-main(@perc) {
+    transition: .3s;
+    background-color: lighten(@eastern-blue, @perc);
 }

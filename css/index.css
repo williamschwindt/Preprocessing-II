@@ -209,10 +209,16 @@ nav .nav {
   }
 }
 nav .nav a {
+  transition: 0.3s;
   margin: 2%;
   text-decoration: none;
   font-size: 1.8rem;
   color: black;
+}
+nav .nav a:hover {
+  transition: 0.3s;
+  color: #17A2B8;
+  background-color: white;
 }
 .footer {
   width: 100%;
@@ -316,6 +322,7 @@ nav .nav a {
   }
 }
 .home .content-pick .destination .btn {
+  transition: 0.3s;
   width: 85%;
   color: white;
   background-color: #17A2B8;
@@ -323,6 +330,10 @@ nav .nav a {
   padding: 4% 0%;
   border-radius: 10px;
   font-size: 2rem;
+}
+.home .content-pick .destination .btn:hover {
+  transition: 0.3s;
+  background-color: #1fc8e3;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
