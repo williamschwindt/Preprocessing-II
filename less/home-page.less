@@ -1,7 +1,7 @@
 .home {
 
   header {
-    border-bottom: 3px dotted grey;
+    border-bottom: 3px dashed @silver;
 
     h2 {
       margin-top: 2%;
@@ -14,19 +14,37 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 98%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        padding-left: 0;
+        width: 98%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -34,6 +52,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -61,9 +83,19 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+        margin: 0 auto;
+
+      }
 
         .btn {
           width: 85%;
@@ -73,6 +105,11 @@
           padding: 4% 0%;
           border-radius: 10px;
           font-size: 2rem;
+
+          @media @mobile {
+            width: 100%;
+            margin-bottom: 10%;
+          }
         }
     }
   }
