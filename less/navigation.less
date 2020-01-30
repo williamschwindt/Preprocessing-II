@@ -1,1 +1,46 @@
 // Navigation Styles here
+
+nav {
+    .flex-layout(space-between, center);
+    border-bottom: 3px dashed @silver;
+    padding: 2% 0;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 25%;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .nav {
+        .flex-layout(flex-end, center);
+        width: 75%;
+
+        @media @mobile {
+            .flex-layout(center, center);
+            width: 100%;
+        }
+        
+
+            a {
+                transition: .3s;
+                margin: 2%;
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: black;
+
+                &:hover {
+                    .hover-btn-nav(@eastern-blue, white);
+                }
+            }
+    }
+
+    
+
+}
